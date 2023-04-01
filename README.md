@@ -1,7 +1,37 @@
-# fundamentos_nod- [Herramientas para ser más felices: Nodemon y PM2](#herramientas-para-ser-más-felices-nodemon-y-pm2)
-- [](#)
-- [](#-1)
-
+# table of contents
+- [table of contents](#table-of-contents)
+- [Introduccion](#introduccion)
+- [Instalación de Node.js](#instalación-de-nodejs)
+- [Node: orígenes y filosofía](#node-orígenes-y-filosofía)
+- [EventLoop: asíncrona por diseño](#eventloop-asíncrona-por-diseño)
+- [Monohilo: implicaciones en diseño y seguridad](#monohilo-implicaciones-en-diseño-y-seguridad)
+- [Configurar las variables de entorno en Node.js](#configurar-las-variables-de-entorno-en-nodejs)
+- [Herramientas para ser más felices: Nodemon y PM2](#herramientas-para-ser-más-felices-nodemon-y-pm2)
+- [Callbacks](#callbacks)
+- [Callback Hell: refactorizar o sufrir](#callback-hell-refactorizar-o-sufrir)
+- [Promesas](#promesas)
+- [Async/await](#asyncawait)
+- [Globals](#globals)
+- [File system](#file-system)
+- [Console](#console)
+- [Errores (try / catch)](#errores-try--catch)
+- [Procesos hijo](#procesos-hijo)
+- [Módulos nativos en C++](#módulos-nativos-en-c)
+- [HTTP](#http)
+- [OS](#os)
+- [Process](#process)
+- [Gestión de paquetes: NPM y package.json](#gestión-de-paquetes-npm-y-packagejson)
+- [Construyendo módulos: Require e Import](#construyendo-módulos-require-e-import)
+- [Modulos utiles](#modulos-utiles)
+- [Datos almacenados vs en memoria](#datos-almacenados-vs-en-memoria)
+- [Buffers](#buffers)
+- [Stream](#stream)
+- [Benchmarking (console time y timeEnd)](#benchmarking-console-time-y-timeend)
+- [Debugger](#debugger)
+- [Error First Callbacks](#error-first-callbacks)
+- [Scraping](#scraping)
+- [Automatizacion de procesos](#automatizacion-de-procesos)
+- [Aplicaciones de escritorio](#aplicaciones-de-escritorio)
 
 
 # Introduccion 
@@ -30,7 +60,6 @@ Descubre qué es Node.js, y por qué es tan potente. Si ya has trabajado con Nod
 
 # Configurar las variables de entorno en Node.js
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25186-variables-de-entorno/)
-2. [Codigo]()
 [Volver al menu](#table-of-contents)
 
 # Herramientas para ser más felices: Nodemon y PM2
@@ -39,7 +68,7 @@ Descubre qué es Node.js, y por qué es tan potente. Si ya has trabajado con Nod
 
 # Callbacks
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25189-callbacks/)
-2. [Codigo](/callback.js)
+2. [Codigo](./callback.js)
 [Volver al menu](#table-of-contents)
 
 # Callback Hell: refactorizar o sufrir
@@ -69,7 +98,7 @@ Descubre qué es Node.js, y por qué es tan potente. Si ya has trabajado con Nod
 
 # Console
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25197-console/)
-2. [Codigo](/modulos/consola.js)
+2. [Codigo](./modulos/consola.js)
 [Volver al menu](#table-of-contents)
 
 # Errores (try / catch)
@@ -79,7 +108,7 @@ Descubre qué es Node.js, y por qué es tan potente. Si ya has trabajado con Nod
 
 # Procesos hijo
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25200-procesos-hijo/)
-2. [Codigo](/modulos/child-process.js)
+2. [Codigo](./modulos/child-process.js)
 [Volver al menu](#table-of-contents)
 
 # Módulos nativos en C++ 
@@ -89,27 +118,21 @@ Esta clase no funciono, esta deactualizada
 
 # HTTP
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25202-http/)
-2. [Codigo](/modulos/http.js)
+2. [Codigo](./modulos/http.js)
 [Volver al menu](#table-of-contents)
 
 # OS
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25203-os/)
-2. [Codigo](/modulos/os.js)
-[Volver al menu](#table-of-contents)
-
-# 
-1. [Clase]()
-2. [Codigo]()
+2. [Codigo](./modulos/os.js)
 [Volver al menu](#table-of-contents)
 
 # Process
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25204-process/)
-2. [Codigo]()
+2. [Codigo](./modulos/process.js)
 [Volver al menu](#table-of-contents)
 
 # Gestión de paquetes: NPM y package.json
 1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25205-gestion-de-paquetes-npm-y-packagejson/)
-2. [Codigo]()
 [Volver al menu](#table-of-contents)
 
 # Construyendo módulos: Require e Import
@@ -131,12 +154,33 @@ Esta clase no funciono, esta deactualizada
 2. [Codigo](memoria/buffer.js)
 [Volver al menu](#table-of-contents)
 
-# 
-1. [Clase]()
-2. [Codigo]()
+# Stream
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25210-streams/)
+2. [Codigo](./memoria/stream.js)
 [Volver al menu](#table-of-contents)
 
-# 
-1. [Clase]()
-2. [Codigo]()
+# Benchmarking (console time y timeEnd)
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25211-benchmarking-console-time-y-timeend/)
+2. [Codigo](./trucos/benchmarking.js)
+[Volver al menu](#table-of-contents)
+
+# Debugger
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25212-debugger/)
+[Volver al menu](#table-of-contents)
+
+# Error First Callbacks
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25213-error-first-callbacks/)
+2. [Codigo](./trucos/error_first.js))
+[Volver al menu](#table-of-contents)
+
+# Scraping
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25214-scraping/)
+[Volver al menu](#table-of-contents)
+
+# Automatizacion de procesos
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25215-automatizacion-de-procesos/)
+[Volver al menu](#table-of-contents)
+
+# Aplicaciones de escritorio
+1. [Clase](https://platzi.com/clases/1759-fundamentos-node/25216-aplicaciones-de-escritorio/)
 [Volver al menu](#table-of-contents)
